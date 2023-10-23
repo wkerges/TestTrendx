@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TaskTrendxAPI</name>
+    </assembly>
+    <members>
+        <member name="M:TaskTrendxAPI.Controllers.TaskController.Post(TaskTrendxAPI.Infrastructure.Models.TaskModel)">
+            <summary>
+            Insere a tarefa na base
+            </summary>
+            <param name="taskModel">Body com a tarefa a ser inserida.</param>
+            <returns></returns>
+            <response code="200">Processou os dados com sucesso.</response>
+            <response code="400">Erro ao inserir a tarefa na base.</response>
+            <response code="500">Erro no processamento da api.</response>
+        </member>
+        <member name="M:TaskTrendxAPI.Controllers.TaskController.Get">
+            <summary>
+            Listar as tarefas
+            </summary>
+            <returns></returns>
+            <response code="200">Consulta executada com sucesso.</response>
+            <response code="400">Erro ao consutar os dados.</response>
+            <response code="404">Não foi encontrado tarefas.</response>
+            <response code="500">Erro no processamento da api.</response>
+        </member>
+        <member name="M:TaskTrendxAPI.Controllers.TaskController.Put(System.Int32,TaskTrendxAPI.Infrastructure.Models.TaskModel)">
+            <summary>
+            Atualiza a tarefa buscando pelo id
+            </summary>
+            <param name="id">Id da tarefa.</param>
+            <param name="taskModel">Body com os dados da tarefa.</param>
+            <returns></returns>
+        </member>
+        <member name="M:TaskTrendxAPI.Controllers.TaskController.Delete(System.Int32)">
+            <summary>
+            Deleta uma tarefa pelo seu id
+            </summary>
+            <param name="id">Id da tarefa.</param>
+            <returns></returns>
+        </member>
+        <member name="P:TaskTrendxAPI.Infrastructure.DTO.ReturnBaseDTO.IsSuccess">
+            <summary>
+            Status do retorno. Se for true, indica que tudo foi OK
+            </summary>
+        </member>
+        <member name="P:TaskTrendxAPI.Infrastructure.DTO.ReturnBaseDTO.DeMessage">
+            <summary>
+            Descrição do retorno. Se success for false, retorna o motivo do erro
+            </summary>
+        </member>
+        <member name="P:TaskTrendxAPI.Infrastructure.DTO.ReturnDTO.IsSuccess">
+            <summary>
+            Status do retorno. Se for true, indica que tudo foi OK
+            </summary>
+        </member>
+        <member name="P:TaskTrendxAPI.Infrastructure.DTO.ReturnDTO.DeMessage">
+            <summary>
+            Descrição do retorno. Se success for false, retorna o motivo do erro
+            </summary>
+        </member>
+        <member name="F:TaskTrendxAPI.Infrastructure.DTO.ReturnDTO.ResponseObject">
+            <summary>
+            Status do retorno. Se for true, retorna o objeto esperado no endpoint
+            </summary>
+        </member>
+    </members>
+</doc>
