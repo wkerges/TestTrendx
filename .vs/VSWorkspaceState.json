@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\TaskTrendxAPI",
+    "\\TaskTrendxAPI\\Controllers",
+    "\\TaskTrendxAPI\\Infrastructure",
+    "\\TaskTrendxAPI\\Infrastructure\\DTO"
+  ],
+  "SelectedNode": "\\TaskTrendxAPI\\TaskTrendxAPI.sln",
+  "PreviewInSolutionExplorer": true
+}
